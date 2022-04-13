@@ -1,0 +1,10 @@
+{
+    "company": "so for 'com.company' just enter 'company' (we'll do sub-package later)",
+    "project_name": "my-project",
+    "description": "E.g. 'Reactive streams library'",
+    "sub_package": "e.g. '{{ cookiecutter.project_name.replace('-', '').replace('_', '') }}' or 'n'",
+    "parent_name": "parent artifactId or 'n'",
+    "java_version": [ "17", "11", "1.8" ],
+    "is_library": [ "n", "y" ],
+    "is_runnable_jar": [ "n", "y" ]
+}
