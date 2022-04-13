@@ -1,10 +1,12 @@
 {
-    "company": "so for 'com.company' just enter 'company' (we'll do sub-package later)",
+    "company": "For e.g. 'com.company' just enter 'company'",
     "project_name": "my-project",
     "description": "E.g. 'Reactive streams library'",
-    "sub_package": "e.g. '{{ cookiecutter.project_name.replace('-', '').replace('_', '') }}' or 'n'",
-    "parent_name": "parent artifactId or 'n'",
+    "sub_package": "E.g. '{{ cookiecutter.project_name.replace('-', '').replace('_', '') }}' or 'n'",
+    "parent_name": "Parent artifactId or 'n'",
     "java_version": [ "17", "11", "1.8" ],
     "is_library": [ "n", "y" ],
-    "is_runnable_jar": [ "n", "y" ]
+    "is_runnable_jar": [ "n", "y" ],
+    "keep_sample_classes": [ "n", "y" ]
 }
+

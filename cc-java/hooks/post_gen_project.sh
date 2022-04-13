@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# Delete example user classes.
+
+if [[ '{{ cookiecutter.keep_sample_classes }}' == 'n' ]]; then
+
+    dir=src/main/java/com/{{ cookiecutter.company }}/{{ cookiecutter.sub_package }}
+    rm $dir/User.java
+
+    dir=src/test/java/com/{{ cookiecutter.company }}/{{ cookiecutter.sub_package }}
+    rm $dir/UserTest.java
+    rm $dir/Mocks.java
+fi
+
 # If the sub-package is simply 'n' then delete it.
 
 if [[ '{{ cookiecutter.sub_package }}' == 'n' ]]; then
